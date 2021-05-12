@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+    margin:0;
+    font-weight: 300;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(110, 108, 108);
+}
+.container{
+    display:flex;
+}
+.content{
+    font-weight: 600;
+    width:80%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    color:white;
+}
+.content a{
+    color:white;
+    text-decoration: none;
+    display:inline-block;
+    border:1px white solid;
+    padding:7px;
+    border-radius: 60% 45% 55% 60%;
+}
+
+.square{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin:20px;
+}
+
+.square span{
+    width:100%;
+    height:inherit;/*same with 100%*/
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+    transition:0.5s;
+}
+
+
+.square span:nth-child(1){
+    animation: circles 5s linear infinite;
+}
+.square span:nth-child(2){
+    animation: circles 9s linear infinite;
+    animation-direction: reverse;
+}
+.square span:nth-child(3){
+    animation: circles 13s linear infinite;
+}
+.square:nth-child(1):hover span{
+    border:none;
+    background-color: crimson;
+}
+.square:nth-child(2):hover span{
+    border:none;
+    background-color:dodgerblue;
+}
+.square:nth-child(3):hover span{
+    border:none;
+    background-color: yellowgreen;
+}
+
+.square:hover span:nth-child(1){
+    opacity: 0.3;
+    /* background-color: red; */
+}
+.square:hover span:nth-child(2){
+    opacity: 0.6;
+    /* background-color: dodgerblue; */
+}
+.square:hover span:nth-child(3){
+    opacity: 0.8;
+    /* background-color:yellowgreen; */
+}
+
+@keyframes circles{
+    0%{
+        transform:rotate(0);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}

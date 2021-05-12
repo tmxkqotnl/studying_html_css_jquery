@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+    margin:0;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.inner-tab{
+    width: 300px;
+    height: 350px;
+    position:relative;
+}
+input[name=tab]{
+    display:none;
+}
+.slide{
+    width: 300px;
+    height: 300px;
+    position:relative;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+.slide-inner{
+    left:0;
+    top:0;
+    position:absolute;
+    width: 900px;
+    font-size:0; /* important*/
+    transition:0.5s;
+}
+.slide-inner a, img{
+    margin:0;
+}
+
+.btn{
+    position:absolute;
+    width: 100%;
+    bottom:10px;
+    text-align: center;
+}
+.btn label{
+    display:inline-block;
+    background-color: lightgray;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor:pointer;
+}
+
+.inner-tab input[id=tab1]:checked ~ .btn label[for=tab1],
+.inner-tab input[id=tab2]:checked ~ .btn label[for=tab2],
+.inner-tab input[id=tab3]:checked ~ .btn label[for=tab3]{
+    background-color: crimson;
+}
+.inner-tab input[id=tab1]:checked ~ .slide .slide-inner{
+    left:0;
+}
+.inner-tab input[id=tab2]:checked ~ .slide .slide-inner{
+    left:-300px;
+}
+.inner-tab input[id=tab3]:checked ~ .slide .slide-inner{
+    left:-600px;
+}

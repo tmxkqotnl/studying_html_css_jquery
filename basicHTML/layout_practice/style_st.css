@@ -1,0 +1,54 @@
+.container{
+    border:1px red solid;
+    padding: 1px;
+    width: 1200px;
+    margin:auto;
+}
+
+header{
+    background-color: skyblue;
+    height: 100px;
+}
+header article{
+    background-color: gray;
+    width: 300px;
+    height: 100px;
+}
+.logo{
+    box-sizing: border-box;
+    float:left;
+}
+.nav{
+    box-sizing: border-box;
+    float:right;
+}
+
+.box1{
+    background-color: yellowgreen;
+    height: 300px;
+}
+.box2{
+    background-color: greenyellow;
+    overflow:hidden;
+}
+.box2 article{
+    width:33.33333%;
+    height: 300px;
+    float:left;
+    border:3px white solid;
+    box-sizing: border-box;
+}
+.sub1{
+    background-color: darkgray;
+}
+.sub2{
+    background-color:pink;
+}
+.sub3{
+    background-color: gold;
+}
+
+footer{
+    background-color: skyblue;
+    height: 100px;
+}

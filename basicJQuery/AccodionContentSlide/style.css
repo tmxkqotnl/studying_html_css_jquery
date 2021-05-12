@@ -1,0 +1,116 @@
+/* import */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+/* body and others */
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin:0;
+    line-height: 1.5em;
+    color:#222;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+
+/* Layout */
+
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section article{
+    width: 980px;
+    height: 500px;
+}
+article .heading{
+    height: 100px;
+    text-align: center;
+    margin-bottom: 20px;;
+}
+.heading h1{
+    font-size: 35px;
+    margin-top:30px;
+}
+.heading h1 em{
+    font-style: normal;
+    position:relative;
+}
+.heading h1 em:after{
+    content:url(images/logo-kakao.png);
+    position:absolute;
+    bottom:65%;
+    left:85%;
+}
+.heading span{
+    color:crimson;
+    font-size: 24px;
+}
+article .content{
+    font-weight: 300;
+}
+
+.accordion,
+.image{
+    box-sizing: border-box;
+    float:left;
+    width: 50%;
+    height: 400px; /* temp */
+}
+.accordion{
+    padding:10px;
+}
+.accordion .title{
+    padding:5px;
+    padding-left:10px;
+    border:1px solid #ddd;
+    border-radius: 3px;
+    font-weight: 500;
+    transition:0.3s;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+.title:after{
+    content:'\f054';
+    font-family: fontawesome;
+    float:right;
+    margin-right: 10px;
+    transition:0.3s;
+}
+.title:hover{
+    content:'';
+    color:white;
+    background-color:#191970;
+}
+.title:hover:after{
+    transform: rotate(90deg);
+    color:orange;
+}
+.title.active{
+    color:white;
+    background-color:#191970;
+}
+.title.active:after{
+    content:'\f054';
+    transform:rotate(90deg);
+    color:orange;
+}
+.accordion .description{
+    padding:20px;
+}
+.description{
+    display:none;
+}
+.description.active{
+    display:block;
+}
+.image{
+    text-align: right;
+}
+.image img{
+    height: 370px;
+}

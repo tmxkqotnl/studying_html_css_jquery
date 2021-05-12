@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    font-family:'Raleway', sans-serif;
+    line-height: 1.5em;
+    margin:0;
+    
+}
+a{
+    color:#222;
+    text-decoration: none;
+}
+.container{
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 300px;  
+    height: 400px;
+    margin:10px;
+    position:relative;
+    overflow:hidden;
+    transition:0.5s;
+}
+.content{
+    position:absolute;
+    width:inherit;
+    height: inherit;
+    top:100%;
+    left:0;
+    padding:20px;
+    text-align: center;
+    box-sizing: border-box; 
+    color:white;    
+    padding-top:150px;
+    box-sizing: border-box;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.card:hover .content{
+    top:0;
+}
+.sns a{
+    color:white;
+    font-size :13px;
+    border:1px white solid;
+    margin:5px;
+    border-radius: 15px;
+    display:inline-block;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+}
+.content h2 span{
+    margin-top:5px;
+    display:block;
+    font-size:14px;
+    color:gold;
+}
+
+.card:nth-child(1) .content{
+    background: linear-gradient(to top, crimson,transparent);
+}
+.card:nth-child(2) .content{
+    background: linear-gradient(to top, dodgerblue,transparent);
+}
+.card:nth-child(3) .content{
+    background: linear-gradient(to top, yellowgreen,transparent);
+}

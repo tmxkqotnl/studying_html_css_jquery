@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+
+body{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+    margin:0;
+    background-color: #fff;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-progress{
+    background-color: #333;
+    width: 500px;
+    padding:10px;
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 5px #333;
+}
+.skill-progress h1{
+    font-size: 40px;
+    font-weight:normal;
+    margin-bottom:40px;
+}
+.item{
+}
+.item p{
+    overflow:hidden;
+    margin-bottom:3px;
+}
+.item p span:nth-child(1){
+    float:left;
+}
+.item p span:nth-child(2){
+    float:right;
+}
+.progress{
+    border:1px solid gray;
+    border-radius: 5px;
+    width: inherit;
+    padding:3px;
+}
+.bar{
+    height: 10px;
+    background: linear-gradient(to right,#efc050,crimson);
+    animation-name : bar;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes bar{
+    0%{
+        width:0;
+    }
+}
+
+.skill-progress .item:nth-of-type(1) .bar{
+    animation-delay: 0.6s;
+}
+.skill-progress .item:nth-of-type(2) .bar{
+    animation-delay: 0.3s;
+}
+.skill-progress .item:nth-of-type(3) .bar{
+    animation-delay: 0.8s;
+}

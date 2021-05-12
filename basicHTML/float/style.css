@@ -1,0 +1,73 @@
+.p{
+    border:6px black solid;
+    width: 600px;
+    /* height:100px; */
+}
+.block_c{
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    float:left; /* default is float:none */
+}
+.p2{
+    margin-top:100px;
+    border:6px black solid;
+    width: 600px;
+    overflow:hidden;
+}
+.block_c2{
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    float:right; 
+}
+.p3{
+    margin-top:50px;
+    border:6px black solid;
+    width: 600px;
+    overflow:hidden;
+}
+.block_c3{
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    margin:auto;  /* only block can */
+}
+.p4{
+    margin-top:50px;
+    border:6px black solid;
+    width: 600px;
+    overflow:hidden;
+}
+.inline1{
+    background-color: red;
+    width: 200px;
+    height: 100px;
+}
+.p5{
+    margin-top:50px;
+    border:6px black solid;
+    width: 600px;
+    overflow:hidden;
+    text-align: center;
+}
+.inline2{
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    display:inline-block;
+    /* float:left; */
+}
+.p6{
+    margin-top:50px;
+    border:6px black solid;
+    width: 600px;
+    overflow:hidden;
+}
+.inline3{
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    display:inline-block;
+    float:right; /* this attribute consider this element as block type */
+}

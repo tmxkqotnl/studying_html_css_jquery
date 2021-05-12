@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@500&display=swap');
+
+body{
+    font-family:'Raleway', sans-serif;
+    line-height: 1.5e;
+    font-weight: 500;
+    margin:0;
+}   
+a{
+    text-decoration: none;
+}
+h1{
+    font-size:50px;
+    font-weight: normal;
+}
+.tab-inner{
+}
+input[name=tab]{
+    display:none;
+}
+.tabs{
+    height: 100vh;
+    overflow:hidden;
+    position:relative;
+}
+.tabs .items{
+    position:absolute;
+    height: 100vh;
+    width: 300%;
+    left:0;
+    top:0;
+    transition:0.5s;
+}
+.tabs .items div{
+    width:33.33333%;
+    height: inherit;
+    box-sizing: border-box;
+    float:left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabs .items div:nth-child(1){
+    background-color: yellowgreen;
+}
+.tabs .items div:nth-child(2){
+    background-color: dodgerblue;
+}
+.tabs .items div:nth-child(3){
+    background:crimson;
+}
+.btn{
+    position:absolute;
+    bottom:40%;
+    width: 100%;
+    text-align: center;
+}
+.btn label{
+    display:inline-block;
+    background-color: white;
+    width: 50px;
+    height: 5px;
+    cursor:pointer;
+}
+.tab-inner input[id=tab1]:checked ~ .btn label[for="tab1"],
+.tab-inner input[id=tab2]:checked ~ .btn label[for="tab2"],
+.tab-inner input[id=tab3]:checked ~ .btn label[for="tab3"]{
+    background-color: black;
+}
+.tab-inner input[id=tab1]:checked ~ .tabs .items{
+    left:0;
+}
+.tab-inner input[id=tab2]:checked ~ .tabs .items{
+    left:-100%;
+}
+.tab-inner input[id=tab3]:checked ~ .tabs .items{
+    left:-200%;
+}

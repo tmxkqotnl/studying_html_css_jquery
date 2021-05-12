@@ -1,0 +1,36 @@
+div{
+    text-align: center;
+    line-height: 100px;
+    font-size: 1.5em;
+    color:white;
+}
+.parent{
+    border:1px red solid;
+    width: 600px;
+    height: 300px;
+    position:relative;
+}
+.child1{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    top:100%;
+    left:0;
+}
+.child2{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    left:100%;
+    top:0;
+}
+.child3{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    top:100%;
+    left:100%;
+}

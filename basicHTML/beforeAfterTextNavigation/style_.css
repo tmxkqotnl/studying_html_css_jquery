@@ -1,0 +1,51 @@
+body{
+    margin:0;
+    line-height: 1.5em;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #ffe8e6,#ff6f61);
+}
+a{
+    text-decoration: none;
+    color:black;
+}   
+.gnb{
+    padding:25px;
+    padding-bottom:15px;
+    background-color: #fff;
+}
+.gnb a{
+    display:inline-block;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    position:relative;
+    overflow:hidden;
+}
+
+.gnb a:before,
+.gnb a:after{
+    width: 100%;
+    content: attr(data-link);
+    position:absolute;
+    text-align: center;
+    transition:0.3s;
+}
+.gnb a:before{
+    top:0;
+    left:0;
+}
+.gnb a:after{
+    top:100%;
+    left:0;
+    color:#88b04b;
+}
+.gnb a:hover:before{
+    top:-100%;
+    opacity: 0;
+}
+.gnb a:hover:after{
+    top:0;
+}

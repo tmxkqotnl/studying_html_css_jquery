@@ -1,0 +1,116 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    background-color: #eee;
+    font-size: 15px;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color:#222;
+    font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    margin:0;
+}
+.container{
+
+}
+/* header */
+
+header{
+    background-color: #fff;
+    text-align: center;
+    border-bottom:1px solid #ddd;
+    height: 60px;
+    padding-top:13px;
+    box-sizing: border-box;
+}
+
+/* section */
+
+section{
+    height: calc(100vh - 60px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.login{
+    width: 360px;
+}   
+/* login-type */
+
+.login-type{
+    text-align: center;
+}
+.login-type h1{
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+.btn{
+    display:block;
+    padding: 15px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    color:white;
+    opacity: 0.8;
+}
+.btn:nth-of-type(1){
+    color:#222;
+    background: #fff url(images/logo-mobile.png) no-repeat center left 10px;
+}
+.btn:nth-of-type(2){
+    background: #898c9b url(images/logo-email.png) no-repeat center left 13px;
+}
+.btn:nth-of-type(3){
+    background: #11ce00 url(images/logo-naver.png) no-repeat center left 13px;
+}
+.btn:nth-of-type(4){
+    background: #0076fe url(images/logo-facebook.png) no-repeat center left 13px;
+}
+.btn:nth-of-type(5){
+    background: #00C026 url(images/logo-line.png) no-repeat center left 10px;
+}
+.btn:hover{
+    opacity:1;
+}
+.or-text{
+    display:block;
+    margin-bottom: 10px;
+    position:relative;
+}
+.or-text:before,
+.or-text:after{
+    content:'';
+    position:absolute;
+    background-color: lightgray;
+    height: 1px;
+    width: 44%;
+    top:50%;
+}
+.or-text:before{
+    left:0;
+}
+.or-text:after{
+    right:0;
+}
+
+/* longin-footer */
+.login-footer{}
+.login-footer input[name=status]{}
+.login-footer span{
+    display:block;
+    text-align: center;
+    margin-top:17px;
+}
+.login-footer span a{}
+.login-footer span a:hover{
+    text-decoration: underline;
+}

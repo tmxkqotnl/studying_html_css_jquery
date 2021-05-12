@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body{
+    font-family: "Raleway",sans-serif;
+    color:#222;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin:0;
+    background-color: royalblue;
+}
+a{
+    color:#222;
+    display:block;
+    text-decoration: none;
+}
+.gnb{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    transition:0.5s;
+}
+.gnb a{
+    position: relative;
+    margin:30px;
+    font-size:40px;
+    color:white;
+}
+.gnb:hover a{
+    opacity: 0.3;
+}
+.gnb a:hover{
+    opacity: 1;
+}
+.gnb a:before{
+    content:'\f105';
+    font-family: fontawesome;
+    margin:10px;
+    opacity: 0;
+}
+.gnb a:hover:before{
+    opacity: 1;
+}

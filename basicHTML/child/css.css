@@ -1,0 +1,20 @@
+.box { 
+    border:solid 1px red;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+}
+.box div{ /* AllChild */
+    border:solid 1px blue;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 10px 20px 30px 40px;
+}
+.box > div{ /* only child */
+    border: dotted 1px black;
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    border-radius: 10px 20px 30px;
+}

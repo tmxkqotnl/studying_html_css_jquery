@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body{
+    margin:0;
+    line-height: 1.5em;
+    font-family: 'Raleway',sans-serif;
+    background-color: #f4f4f4;
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+header{
+}
+header h1{
+
+}
+header h1 span{
+    color:crimson;
+}
+header input[type=text]{
+    width: 900px;
+    outline:none;
+    border:none;
+    padding:10px;
+    box-sizing: border-box;
+    border-bottom:2px solid #ddd;
+    padding-left:50px;
+    background: #fff url(../images/search-icon.png) no-repeat center left 10px;
+    background-size: 23px;
+}
+header input[type=text]::placeholder{
+    font-style: italic;
+    transition: 0.3s;
+    opacity: 1;
+}
+header input[type=text]:focus::placeholder{
+    visibility: hidden;
+    opacity: 0;
+}
+section{
+    margin-top:50px;
+    width: 900px;
+}
+.tab-menu{
+    list-style: none;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    margin-left:10px;
+}
+.tab-menu li{
+    background-color: rgb(229, 226, 226);
+    float:left;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    border-right:1px solid rgba(185, 181, 181, 0.2);
+    padding:5px;
+    text-transform: uppercase;
+    border-top:2px solid transparent;
+}
+.tab-menu li:last-child{
+    border-right:none;
+}
+.tab-menu li:hover{
+    background: white;
+    border-top: 2px solid red;
+}
+.tab-menu li.active{
+    background-color: #fff;
+    border-top: 2px solid red;
+}
+.tabs{
+    background-color: #fff;
+}
+.tabs > div{
+    height: 300px;
+    padding:30px;
+    display:none;
+    border: 1px solid lightgray;
+    border-top:none;
+}
+.tabs div h1{
+    text-align: center;
+    font-size: 2em;
+}
+.tabs div p{
+    overflow:hidden; /* important */
+}
+.tabs div img{
+    float:left;
+    margin-right:15px;
+}
+.tabs .active{
+    display:block;
+}

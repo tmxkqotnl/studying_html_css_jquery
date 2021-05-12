@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body{
+    font-family: "Noto Sans KR",sans-serif;
+    color:#222;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin:0;
+    background-color: #222;
+    color:white;
+    font-size:15px;
+}
+a{
+    color:#222;
+    text-decoration: none;
+}
+.items{
+    text-align: center;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: max-content;
+}
+.item{
+    width: 400px;
+    height: 300px;
+    display:inline-block;
+    position:relative;
+    margin:30px;
+}
+.front, .rear{
+    position:absolute;
+    top:0;
+    transition: 0.5s;
+}
+.front{
+    background-color: #444;
+    height: inherit;
+    width: inherit;
+    box-sizing: border-box;
+}
+.front > img{
+    padding:10px;
+}
+.item:hover img{
+    animation: ani 1s linear infinite;
+}
+.front > h2{
+    margin-top: 0;
+}
+.rear{
+    background-color: #fff;
+    color:black;
+    height: inherit;
+    padding:20px;
+    box-sizing: border-box;
+    z-index: -1;
+    opacity: 0;
+}
+.rear > p{
+    font-size:20px;
+}
+.rear > a{
+    background-color: yellowgreen;
+    color:white;
+    padding:5px 20px;
+    border-radius: 20px;
+}
+.rear > a:hover{
+    background-color: #222;
+}
+.item:hover .rear{
+    top:50%;
+    opacity: 1;
+}
+.item:hover .front{
+    top:-50%;
+}
+
+@keyframes ani {
+    0%,100%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform:scale(1.1);
+    }
+}

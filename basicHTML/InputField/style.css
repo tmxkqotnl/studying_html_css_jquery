@@ -1,0 +1,94 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+
+body{
+    margin:0;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    width: 300px;
+    margin-bottom: 10px;
+    position:relative;
+}
+.item input[type=text],
+.item input[type=tel],
+.item input[type=email]{
+    border: 1px solid lightgray;
+    height:40px;
+    width: inherit;
+    border-radius: 5px;
+    padding:10px;
+    box-sizing: border-box;
+    padding-left:50px;
+    outline:none;
+    transition: 0.3s;
+}
+
+.item .fa{
+    top:0;
+    left:0;
+    position:absolute;
+    color:gray;
+    font-size:18px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.item input:focus{
+    border:1px solid dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+}
+/* important */
+.item input:focus + .fa{
+    color:dodgerblue;
+}
+
+.item input:focus::placeholder{
+    visibility: hidden;
+}
+
+.item2{
+    width: 300px;
+    margin-bottom: 10px;
+    position:relative;
+}
+.item2 input{
+    height: 40px;
+    border:1px solid lightgray;
+    width: inherit;
+    padding:10px;
+    padding-left:55px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline:none;
+    transition:0.3s;
+}
+.item2 input:focus::placeholder{
+    visibility: hidden;
+}
+.item2 .fa{
+    line-height: 40px;
+    width:40px;
+    top:0;
+    left:0;
+    position:absolute;
+    font-size:15px;
+    color:white;
+    background-color: gray;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+.item2 input:focus{
+    border: 1px solid dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+}
+.item2 input:focus + .fa{
+    background-color: dodgerblue;
+}

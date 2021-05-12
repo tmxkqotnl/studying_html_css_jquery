@@ -1,0 +1,27 @@
+body{
+    font-size:30px;
+    color:#333;
+    background-color: #fff;
+}
+
+
+.A a{ 
+    /* color of a tag is not effected by color of body */
+    color:black;
+    text-decoration: none;
+    transition: 2s; 
+}
+.A a:hover{
+    color:dodgerblue;
+    text-decoration: underline;
+}
+
+.B a{ 
+    color:black;
+    text-decoration: none;
+}
+.B a:hover{
+    color:dodgerblue;
+    text-decoration: underline;
+    transition: 2s; 
+}

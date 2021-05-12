@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+body{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+    margin:0;
+    background-color: #fff;
+}
+.skill-progress{
+    width: 500px;
+    padding:20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.skill-progress h1{
+    text-align: center;
+    margin-bottom: 35px;
+    font-size:40px;
+    font-weight: normal;
+}
+.item{
+
+}
+.item p{
+    overflow:hidden;
+    margin-bottom: 3px;
+}
+.item p span{
+}
+.item p span:nth-child(1){
+    float:left;
+}
+.item p span:nth-child(2){
+    float:right;
+}
+.progress{
+    border:1px #45b8ac solid;
+    padding:3px;
+    border-radius: 3px;
+}
+.progress-level{
+    height: 10px;
+    background:linear-gradient(to right,#efc050,crimson);
+    animation-name: bar;
+    animation-duration: 1s;
+}
+@keyframes bar {
+    from{
+        width:0;
+    }
+}

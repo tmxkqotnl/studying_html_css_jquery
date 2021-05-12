@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+    margin:0;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;   
+    color:#222;
+}
+
+.container{
+
+}
+.container a{
+    display: block;
+    position:relative;
+    padding-bottom: 5px;
+}
+.container a:before{
+    content:'';
+    position:absolute;
+    width:0;
+    bottom:0;
+    background-color: crimson;
+    height: 1px;
+    transition:0.5s;
+}
+
+.container a[id="a"]:before{
+    left:0;
+    width: 0%;
+}
+.container a[id="a"]:hover:before{
+    width:100%;
+}
+
+.container a[id="b"]:before{
+    right:0;
+}
+.container a[id="b"]:hover:before{
+    width:100%;
+}
+
+.container a[id="c"]:before{
+    left:0;
+    height: 2px;
+    width: 2px;
+}
+.container a[id="c"]:hover:before{
+    left:calc(100% - 4px);
+}
+
+.container a[id="d"]:before{
+    left:50%;
+    transform:translate(-50%,0);
+}
+.container a[id="d"]:hover:before{
+    width:100%;
+}
+.container a[id="e"]:before{
+    left:50%;
+    transform:translate(-50%,0);
+    width: 100%;
+}
+.container a[id="e"]:hover:before{
+    width: 0%;
+}

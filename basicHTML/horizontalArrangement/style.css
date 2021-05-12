@@ -1,0 +1,43 @@
+.section1{
+    border:3px solid black;
+    width:fit-content;
+    overflow:hidden;
+    margin-bottom:10px;
+    line-height:100px;
+    text-align: center;
+}
+.section1 article{
+    background-color: gold;
+    border:3px white solid;
+    width: 200px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.section2{
+    border:3px solid black;
+    width:600px;
+    overflow:hidden;
+    margin-bottom:10px;
+    line-height:100px;
+    text-align: center;
+}
+.section2 article{
+    background-color: gold;
+    border:3px white solid;
+    width: 200px;
+    height: 100px;
+    box-sizing: border-box;
+    float:left;
+}
+.section3{
+    border:3px solid black;
+    text-align:center;
+    line-height:100px;
+}
+.section3 article{
+    background-color: gold;
+    border:3px white solid;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+}
